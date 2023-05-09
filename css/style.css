@@ -135,7 +135,10 @@ img {
 .nav-link:focus {
   color: var(--hover-color);
 }
-.nav-link.current {
+/* .nav-link.current {
+  color: var(--hover-color);
+} */
+.current {
   color: var(--hover-color);
 }
 .current::after {

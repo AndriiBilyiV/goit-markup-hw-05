@@ -138,10 +138,10 @@ img {
 /* .nav-link.current {
   color: var(--hover-color);
 } */
-.current {
+.nav-link.current {
   color: var(--hover-color);
 }
-.current::after {
+.nav-link.current::after {
   content: "";
   display: block;
   height: 4px;

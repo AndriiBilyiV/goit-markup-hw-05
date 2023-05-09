@@ -352,8 +352,6 @@ img {
   border: 1px solid currentColor;
   border-radius: 4px;
   color: var(--card-company);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-link {
   width: 100%;
@@ -362,6 +360,8 @@ img {
   align-items: center;
   justify-content: center;
   color: inherit;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-card:hover,
 .customer-card:focus {
@@ -559,7 +559,9 @@ img {
   opacity: 0;
 }
 .modal {
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   width: var(--modal-width);
   min-height: var(--modal-height);
   background: var(--modal-bg);
@@ -569,7 +571,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   transform-origin: top center;
   transition-property: opacity, transform;
